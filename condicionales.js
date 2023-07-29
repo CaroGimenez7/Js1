@@ -55,18 +55,69 @@
 
 //! EJERCICIO 4 PATOVICA DE FIESTA: preguntar edad, si es menor solo puede pasar a la fiesta con un tutor
 
-let edad = prompt(`ingrese su edad`);
+// let edad = prompt(`ingrese su edad`);
 
-if (edad >= 18) {
-    console.log(`puede pasar`)
-} else if (edad < 18) {
-    let tutor = prompt(`viene acompañado de un tutor?`)
-    if (tutor.includes(`si`)) {
-        console.log(`ingrese por favor`)
-    }else{
-        console.log(`no puede ingresar`)
-    }
+// if (edad >= 18) {
+//     console.log(`puede pasar`)
+// } else if (edad < 18) {
+//     let tutor = prompt(`viene acompañado de un tutor?`)
+//     if (tutor.includes(`si`)) {
+//         console.log(`ingrese por favor`)
+//     }else{
+//         console.log(`no puede ingresar`)
+//     }
+// }
+
+//! EJERCICIO 5 CEMENTERIO INDIO EMBRUJADO: una persona esta por comprar un inmueble, si llevo anteojos podra leer que en la letra pequeña se avisa que el inmueble esta construido sobre un cementerio indio embrujado.
+//PREGUNTAR AL USUARIO SI TRAJO ANTEOJOS, EN CASO QUE DIGA "SI" MOSTRALE EL MSJ QUE NO COMPRE, EN CASO QUE DIGA "NO" MOSTRAR EL MSJ QUE DIGA, COMPRA TRANQUILO.
+
+// let pregunta = prompt("traes anteojos??").toLocaleLowerCase();
+
+// if (pregunta == "si") {
+//     console.log(`corre no te conviene!!!`)
+// }else if( pregunta == `no`){
+//     console.log(`compra tranquilo pa \`pa\``)
+// }else{
+//     alert(`solo se admiten respuestas entre "SI Y NO"`)
+// }
+
+//! EJERCICIO 6 PROVINCIAS COPADAS: al escribir la provincia de donde es el usuario, mostranos en consola algo respectivo a ella.
+
+let provincias = prompt("de que provincias sos?").toLocaleLowerCase();
+
+// //tucuman, santiago, cordoba, jujuy
+
+// if (provincias == `tucuman`) {
+//     alert(`altas empanadas`)
+// }else if (provincias == `santiago`) {
+//     console.log(`alta siesta primo`)
+// }else if (provincias == `cordoba`) {
+//     console.log(`aguante el cuarteto y el fernet`)
+// }else if (provincias == `jujuy`) {
+//     console.log(`soltame carnaval`)
+// }else {
+//     console.log(`provincia irrelevante`)
+// }
+
+switch (provincias) {
+    case `tucuman`:
+        alert(`altas empanadas`)
+        break;
+        case `santiago`:
+        console.log(`alta siesta primo`)
+        break;
+        case `jujuy`:
+            console.log(`soltame carnaval`)
+            break;
+    default:
+        console.log(`provincia irrelevante`)
+        break;
 }
+
+
+
+
+
 
 
 
