@@ -11,6 +11,8 @@
 //     }
 // }
 
+//?CONDICIONALES
+
 //if (condicion){
 // lo que pasa si se cumple dicha condicion
 //} else{
@@ -20,7 +22,6 @@
 //! EJERCICIO 3: DE COMPARACION DE NUMEROS : pedimos dos numeros al usuario y comparamos si el 1er num es mayor al 2do num
 // let numberUser = parseInt(prompt('Ingrese el primer numero'));
 // let  numbeUser2 = parseInt(prompt('Ingrese el segundo Numero'))
-
 
 // if(numberUser > numbeUser2){
 //     console.log('el numero es mayor')
@@ -83,7 +84,7 @@
 
 //! EJERCICIO 6 PROVINCIAS COPADAS: al escribir la provincia de donde es el usuario, mostranos en consola algo respectivo a ella.
 
-let provincias = prompt("de que provincias sos?").toLocaleLowerCase();
+// let provincias = prompt("de que provincias sos?").toLocaleLowerCase();
 
 // //tucuman, santiago, cordoba, jujuy
 
@@ -99,26 +100,54 @@ let provincias = prompt("de que provincias sos?").toLocaleLowerCase();
 //     console.log(`provincia irrelevante`)
 // }
 
-switch (provincias) {
-    case `tucuman`:
-        alert(`altas empanadas`)
-        break;
-        case `santiago`:
-        console.log(`alta siesta primo`)
-        break;
-        case `jujuy`:
-            console.log(`soltame carnaval`)
-            break;
-    default:
-        console.log(`provincia irrelevante`)
-        break;
-}
+//? OTRA FORMA DE HACER CONDICIONALES CON SWITCH
 
+// switch (provincias) {
+//     case `tucuman`:
+//         alert(`altas empanadas`)
+//         break;
+//         case `santiago`:
+//         console.log(`alta siesta primo`)
+//         break;
+//         case `jujuy`:
+//             console.log(`soltame carnaval`)
+//             break;
+//     default:
+//         console.log(`provincia irrelevante`)
+//         break;
+// }
 
+//!EJERCICIO 7 EJERCICIO PROMEDIO: el usuario ingresa 3 notas, debemos calcular el promedio y de acuerdo al resultado informarle si esta aprobado o desaprobado
 
+// const nota1 = Number(prompt(`ingrese la nota del primer trimestre`));
+// const nota2 = Number(prompt(`ingrese la nota del segundo trimestre`));
+// const nota3 = Number(prompt(`ingrese la nota del tercer trimestre`));
+// const promedio = (nota1 + nota2 + nota3) /3;
+// console.log(promedio)
 
+// if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)) {
+//     alert(`solo se admiten numeros`)
+// }else if (promedio >= 6) {
+//     alert(`estas aprobado✌🎉`)  //para hacer emojis debemos colocar tecla window + punto
+// }else {
+//     alert(`estas desaprobado`)
+// }
 
+//!EJERCICIO 8 QUE DIA ES HOY??:
 
+// let day = new Date().getDay();
 
-
-
+// switch (day) {
+//   case 1:
+//     console.log(`hoy es lunes`);
+//     break;
+//   case 2:
+//     console.log(`hoy es martes`);
+//     break;
+//   case 3:
+//     console.error(`hoy es miercoles`);
+//     break;
+//   case 4:
+//     console.log(`hoy es jueves`);
+//     break;
+// }
