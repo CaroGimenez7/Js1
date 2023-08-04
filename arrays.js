@@ -4,7 +4,7 @@
 
 // console.log(array.length)
 
-let dias = [`lunes`, `martes`, `miercoles`, `jueves`, `viernes`, `sabado`, `domingo`];
+// let dias = [`lunes`, `martes`, `miercoles`, `jueves`, `viernes`, `sabado`, `domingo`];
 
 //todo METODO PARA AGREGAR UN ELEMENTO AL FINAL DEL ARRAY
 // dias.push(`feriado`) 
@@ -30,15 +30,15 @@ let dias = [`lunes`, `martes`, `miercoles`, `jueves`, `viernes`, `sabado`, `domi
 // console.log(dias.reverse())
 
 //todo CONCATENA DOS ARREGLOS, DEBEMOS PASAR EL SEGUNDO ARREGLO COMO PARAMETRO
-let diasDos = [`feriado`, `domingo`]
+// let diasDos = [`feriado`, `domingo`]
 
-console.log(dias.concat(diasDos))
+// console.log(dias.concat(diasDos))
 
 //todo DEVUELVE TRUE EN CASO QUE CONTENGA AL ELEMENTO INDICADO POR PARAMETRO
-console.log(dias.includes(`miercoles`))
+// console.log(dias.includes(`miercoles`))
 
 //todo DEVUELVE TODOS LOS ELEMENTOS CON EL SEPARADOR ESPECIFICADO POR PARAMETRO
-console.log(dias.join(`- `))
+// console.log(dias.join(`- `))
 
 //todo ORDENA EL ARRAY ALFABETICAMENTE
 // console.log(dias.sort())
@@ -49,5 +49,5 @@ console.log(dias.join(`- `))
 
 //todo HACE LO MISMO QUE SPLICE PERO NO MODIFICA EL ARRAY ORIGINAL
 
-dias.slice(1, `domingo`)
-console.log(dias)
+// dias.slice(1, `domingo`)
+// console.log(dias)
