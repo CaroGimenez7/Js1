@@ -35,3 +35,16 @@ const deleteUser = () => {
 
      
 }
+
+ const updateUser = () => {
+   let nameUser = prompt(`ingrese el usuario que desea eliminar`).toLocaleLowerCase();
+   let update = prompt(`que usuario queres agregar`).toLocaleLowerCase();
+   let position = database.indexOf(nameUser);
+
+   if (database.includes(nameUser)) {
+      database.splice(position,1,update);
+      alert(`usuario editado correctamente`)
+   }else {
+      alert(`usuario no encontrado!`)
+   }
+ }
