@@ -72,34 +72,59 @@ let productos = [
 console.log(productos.nombre)
 console.log(productos[0].nombre)
 
-//! EJERCICIO 1
+//! EJERCICIO 1: Peliculas o series
 
 //con clases
-class Peliculas {
-    constructor(titulo, genero, año, sinopsis){
-        this.titulo = titulo;
-        this.genero = genero;
-        this.año = año;
-        this.sinopsis = sinopsis;
-    }
+// class Peliculas {
+//     constructor(titulo, genero, año, sinopsis){
+//         this.titulo = titulo;
+//         this.genero = genero;
+//         this.año = año;
+//         this.sinopsis = sinopsis;
+//     }
 
-}
+// }
  
-const spiderMan = new Peliculas(`Spider Man`, `drama`, 2016, `Peter es picado por una araña y tiene poderes`)
-const conjuro2 = new Peliculas(`Conjuro2`, `terror`, 2019, `el reaparecimiento de un demonio que persigue a toda una familia`)
-console.log(spiderMan)
+// const spiderMan = new Peliculas(`Spider Man`, `drama`, 2016, `Peter es picado por una araña y tiene poderes`)
+// const conjuro2 = new Peliculas(`Conjuro2`, `terror`, 2019, `el reaparecimiento de un demonio que persigue a toda una familia`)
+// console.log(spiderMan)
 
 //funcion
 
-let pelis = [
-    {id: `1`, name: `spiderman`, año: 2001, sinopsis: `el heroe regresa`},
-    {id: `2`, name: `The Batman`, año: 2020, sinopsis: `el caballero de la noche vive una aventura`},
-    {id: `3`, name: `midsomar`, año: 2018, sinopsis: `vive la aventura de una secta` },
-    {id: `4`, name: `seven`, año: 2005, sinopsis: `descubre un caso aterrador`},
-    {nombrePelis: function(){
-        console.log(pelis[0].sinopsis)
-        console.log(pelis[1].name)
-        console.log(pelis[2].name)
-        console.log(pelis[3].name)
-    }}
-]
+// let pelis = [
+//     {id: `1`, name: `spiderman`, año: 2001, sinopsis: `el heroe regresa`},
+//     {id: `2`, name: `The Batman`, año: 2020, sinopsis: `el caballero de la noche vive una aventura`},
+//     {id: `3`, name: `midsomar`, año: 2018, sinopsis: `vive la aventura de una secta` },
+//     {id: `4`, name: `seven`, año: 2005, sinopsis: `descubre un caso aterrador`},
+//     {nombrePelis: function(){
+//         console.log(pelis[0].sinopsis)
+//         console.log(pelis[1].name)
+//         console.log(pelis[2].name)
+//         console.log(pelis[3].name)
+//     }}
+// ]  
+
+
+const series = [{
+    nombre: `friends`,
+    temporadas: 10,
+    description: `grupo de amigos que se divierten y la pasan bien`,
+    mostrarDesc: function(){
+        console.log(`la serie se llama ${this.nombre}, un resumen breve: ${this.description}`)
+    }},
+     {
+        nombre: `The crown`,
+        temporadas: 5,
+        description: `las verdades de la reina Isabel`,
+        mostrarDesc: function(){
+            console.log(`la serie se llama ${this.nombre}, un resumen breve: ${this.description}`)
+        }
+    }]
+     
+    //forEach
+    series.forEach(serie => serie.mostrarDesc())
+    
+    
+
+
+
